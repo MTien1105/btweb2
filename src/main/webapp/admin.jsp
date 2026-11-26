@@ -13,7 +13,7 @@
         .auth-bar a { color: #fffa65; text-decoration: none; margin-left: 10px; font-weight: bold; }
         nav { background: #1a1e21; padding: 10px 30px; display: flex; justify-content: space-between; align-items: center; }
         .nav-links a { color: #f8f9fa; margin-right: 20px; text-decoration: none; font-weight: 500; }
-        nav a:hover { color: #dc3545; }
+        .nav-links a:hover { color: #dc3545; }
         main { padding: 30px; min-height: 400px; background: white; margin: 20px 30px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
         footer { background: #1a1e21; color: #adb5bd; text-align: center; padding: 15px; }
     </style>
@@ -32,6 +32,7 @@
             <a href="/">Về Trang User</a>
             <a href="/admin/dashboard">Admin Dashboard</a>
             <a href="/admin/categories/searchpaginated">Quản lý Category</a>
+            <a href="/admin/users/searchpaginated">Quản lý User</a>
         </div>
     </nav>
     <main>

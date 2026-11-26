@@ -1,5 +1,7 @@
 package vn.iotstar.services;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import vn.iotstar.entity.User;
 
 import java.util.List;
@@ -16,4 +18,9 @@ public interface UserService {
     List<User> findAll();
     Optional<User> findById(Long id);
     long count();
+    void deleteById(Long id);
+
+    // Phân trang và tìm kiếm User
+    Page<User> findAll(Pageable pageable);
+    Page<User> search(String keyword, Pageable pageable);
 }

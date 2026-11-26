@@ -32,6 +32,7 @@
             <a href="/">Về Trang User</a>
             <a href="/admin/dashboard">Admin Dashboard</a>
             <a href="/admin/categories/searchpaginated">Quản lý Category</a>
+            <a href="/admin/users/searchpaginated">Quản lý User</a>
         </div>
     </nav>
     <main>

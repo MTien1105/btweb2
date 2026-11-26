@@ -1,6 +1,8 @@
 package vn.iotstar.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import vn.iotstar.entity.User;
 import vn.iotstar.repository.UserRepository;
@@ -75,5 +77,20 @@ public class UserServiceImpl implements UserService {
     @Override
     public long count() {
         return userRepository.count();
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        userRepository.deleteById(id);
+    }
+
+    @Override
+    public Page<User> findAll(Pageable pageable) {
+        return userRepository.findAll(pageable);
+    }
+
+    @Override
+    public Page<User> search(String keyword, Pageable pageable) {
+        return userRepository.search(keyword, pageable);
     }
 }
